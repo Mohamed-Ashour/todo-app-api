@@ -1,0 +1,20 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "Simple todo app api using restify",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "docker": "docker-compose up"
+  },
+  "keywords": [],
+  "author": "Mohamed Ashour",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.3.7",
+    "restify": "^7.2.2",
+    "restify-cors-middleware": "^1.1.1",
+    "restify-errors": "^6.1.1"
+  }
+}

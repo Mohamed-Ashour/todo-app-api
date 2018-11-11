@@ -1,0 +1,17 @@
+version: '3'
+services:
+  node:
+    depends_on:
+      - mongo
+    env_file:
+      - ./.env
+    build:
+      context: .
+    links:
+       - mongo:mongo
+    ports:
+     - "3000:3000"
+  mongo:
+    image: "mongo:3.4"
+    logging:
+      driver: 'none'
