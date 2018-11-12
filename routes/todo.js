@@ -60,7 +60,7 @@ module.exports = server => {
     '/todos/:id',
     async (req, res, next) => {
       try {
-        await Todo.findOneAndDelete({
+        await Todo.findOneAndRemove({
           _id: req.params.id
         });
         res.send(204);

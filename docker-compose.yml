@@ -3,8 +3,6 @@ services:
   node:
     depends_on:
       - mongo
-    env_file:
-      - ./.env
     build:
       context: .
     links:
